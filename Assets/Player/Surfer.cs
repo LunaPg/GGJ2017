@@ -111,8 +111,13 @@ namespace Completed
 
 			if (item.gameObject.tag == "bonus") {
 				//audioSource.PlayOneShot (yeah, 10);
-				speak.enabled = true;
+				dialog();
+
 			}
+		}
+		private void dialog(){
+			speak.enabled = true;
+			
 		}
 		
 		
