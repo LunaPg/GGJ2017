@@ -32,6 +32,7 @@ namespace Completed
 				
 		private int level = 1;									//Current level number, expressed in game as "Day 1".
 		private int scoreNum = 0;
+		// Scrollbar value, 0 -> 1
 		private float interval;
 
 
@@ -39,7 +40,7 @@ namespace Completed
 		//Awake is always called before any Start functions
 		void Awake(){
 			interval = 1 / (gameTime*100);
-			this.items =   bonus.Count;
+			this.items = bonus.Count;
 			timeStart = Time.time;
             //Check if instance already exists
             if (instance == null)
@@ -57,8 +58,6 @@ namespace Completed
 		}
 
 		void Start(){
-			
-			
 		}
 
         //this is called only once, and the paramter tell it to be called only after the scene was loaded
