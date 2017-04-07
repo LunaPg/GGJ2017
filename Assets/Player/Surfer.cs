@@ -54,7 +54,6 @@ namespace Completed
 			GameDefinition.instance.life = life;
 		}
 		
-		
 		private void Update () {
 			float horizontal = 0;  	//Used to store the horizontal move direction.
 			float vertical = 0;		//Used to store the vertical move direction.
